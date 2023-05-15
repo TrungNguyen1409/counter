@@ -12,9 +12,9 @@ contract CounterTest is Test {
         counter.setNumber(0);
     }
 
-    function testIncrement() public {
-        counter.increment();
-        assertEq(counter.number(), 1);
+    function testIncrementTwo() public {
+        counter.incrementTwo();
+        assertEq(counter.number(), 2);
     }
 
     function testSetNumber(uint256 x) public {
